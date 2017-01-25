@@ -1,10 +1,10 @@
 // This will move to its own file but we'll progress through these commits like we will the course
+//postgres://postgres:password@localhost:5432/workoutlog
 // database connection to local postgres running on default port, named 'workoutlog'
 // username: postgres  pwd: password
 var Sequelize = require('sequelize');
 
 var sequelize = new Sequelize('workoutlog', 'postgres', 'Letmein1234!', {
-	host: 'localhost',
 	dialect: 'postgres'
 });
 
