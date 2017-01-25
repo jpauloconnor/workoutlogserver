@@ -3,9 +3,11 @@
 // username: postgres  pwd: password
 var Sequelize = require('sequelize');
 
-var sequelize = new Sequelize('workoutlog', 'postgres', 'password', {
-	dialect: 'postgres'
+// postgres://postgres:password@localhost:5432/workoutlog
+var sequelize = new Sequelize(process.env.DATABASE_URL || 'postgres://postgres:password@localhost:5432/workoutlog', {
+	dialect: 'postgres'	
 });
+
 
 sequelize.authenticate().then(
 	function() {
