@@ -1,6 +1,7 @@
 // This moved to its own file but we'll progress through these commits like we will the course
 // database connection to local postgres running on default port, named 'workoutlog'
 // username: postgres  pwd: password
+// Test
 var Sequelize = require('sequelize');
 
 var sequelize = new Sequelize(process.env.DATABASE_URL, {
