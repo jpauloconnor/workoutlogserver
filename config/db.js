@@ -4,7 +4,6 @@
 var Sequelize = require('sequelize');
 
 var sequelize = new Sequelize('workoutlog', 'postgres', 'password', {
-	host: 'localhost',
 	dialect: 'postgres'
 });
 
