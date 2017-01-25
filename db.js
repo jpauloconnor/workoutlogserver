@@ -20,8 +20,8 @@ sequelize.authenticate().then(
 );
 
 var User = sequelize.import('./models/user');
-var Log = sequelize.import('./models/log');
-var Definition = sequelize.import('./models/definition');
+// var Log = sequelize.import('./models/log');
+// var Definition = sequelize.import('./models/definition');
 
 // // setKeys
 // User.hasMany(Log, {foreignKey: "owner"});
